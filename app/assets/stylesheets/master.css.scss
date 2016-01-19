@@ -1,3 +1,22 @@
+
+body{
+	padding-top: 100px;
+	background: url('/assets/plaster.png');
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", 
+	Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.navbar-default {
+	background-image: none;
+	background-color: rgba(255,255,255,.3);
+}
+
+.navbar-default .navbar-brand{
+  font-family: 'jenna_sueregular';
+	color: #2A5328;
+	font-size: 20px;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
