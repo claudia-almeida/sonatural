@@ -6,7 +6,8 @@ gem 'rails', '4.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-
+# Gemfile for Rails 3+, Sinatra, or Merb
+gem 'will_paginate'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
