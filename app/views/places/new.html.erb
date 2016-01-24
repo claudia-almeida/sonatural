@@ -1,0 +1,12 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1>Enter Your Place Details</h1>
+
+	<%= simple_form_for @place do |f| %>
+	<%= f.input :name %>
+	<%= f.input :category %>
+	<%= f.input :address %>
+	<%= f.input :description %>
+	<br />
+	<%= f.submit 'Create' %>
+	<% end %>
+</div>
