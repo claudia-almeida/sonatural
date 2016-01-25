@@ -3,4 +3,7 @@
 	<h3><%= @place.category %></h3>
 	<i><%= @place.address %></i><br />
 	<p><%= @place.description %></p><br />
+	<div class="pull-right">
+		<%= link_to 'Edit', edit_place_path, class: 'btn btn-primary' %>
+	</div>
 </div>
