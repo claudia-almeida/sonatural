@@ -9,6 +9,12 @@ gem 'pg'
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate'
 
+# ENV geocoder related
+gem 'figaro', ">= 1.0.0"
+
+# Cool mapping features
+gem 'geocoder'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
