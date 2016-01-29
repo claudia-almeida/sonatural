@@ -10,7 +10,7 @@ Nomster::Application.configure do
 #  user_name: ENV['GMAIL_ADDRESS'],
 #  password: ENV['GMAIL_PASSWORD']
 # }
-  config.action_mailer.default_url_options = {host: 'localhost:3030'}
+  config.action_mailer.default_url_options = {host: 'sonatural-claudia.herokuapp.com'}
 
 
   # Settings specified here will take precedence over those in config/application.rb.
