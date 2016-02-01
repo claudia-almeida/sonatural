@@ -1,4 +1,4 @@
-<div class="container fill">
+<div class="container-fluid fill">
 <div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
     <div class="active item">
@@ -9,7 +9,9 @@
       </div>
     </div>
     <div class="item">
-    <%= image_tag 'slider2.jpg' %>
+    <div class="fill">
+    	 <%= image_tag('bubbles.jpg', :alt => "Blowing bubbles") %>
+    </div>
     <div class="carousel-caption">
       Looking for hotdogs?
     </div>
@@ -29,6 +31,14 @@
 </div>
 </div>
 
+<div class="container-fluid divider">
+	<div class="container-fluid row">
+		<div class="one col-xs-12 col-sm-3">Health</div>
+		<div class="two col-xs-12 col-sm-3">Places</div>
+		<div class="three col-xs-12 col-sm-3">Books</div>
+		<div class="four col-xs-12 col-sm-3">Philosophy</div>
+	</div>
+</div>
 
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">

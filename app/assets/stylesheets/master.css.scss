@@ -1,11 +1,3 @@
-
-body{
-	padding: 0px;
-	background: url('/assets/plaster.png');
-	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", 
-	Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-
  html,body{height:100%;}
 .carousel,.item,.active{height:100%;}
 .carousel-inner{height:100%;}
@@ -13,6 +5,8 @@ body{
   height:100%;
   background-position:center;
   background-size: cover;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", 
+  Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
  } 
 
 /* faster sliding speed */
@@ -27,17 +21,52 @@ body{
     background-image: none;
 }
 
+.divider{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -59px;
+  padding: 0;
+  color: #ffffff;
+  font-weight: bold;
+}
 
+.divider .row div{
+  padding: 20px;
+}
+.one{
+  background-color: #44BF6B;
+  background-color: rgba(51,193,48,.8);
+}
+
+.two{
+  background-color: #33C130;
+  background-color: rgba(51, 193, 48, .8); 
+}
+.three{
+  background-color: #12CF4D;
+  background-color: rgba(18, 207, 77, .8);
+}
+.four{
+  background-color: #34FA74;
+  background-color: rgba(106, 186, 38, .8);
+}
+
+.fill{
+  padding: 0;
+}
 
 .navbar-default {
 	background-image: none;
-	background-color: rgba(255,255,255,.3);
+	background-color: rgba(255,255,255,.4);
+  border-bottom: none;  
+  color: #ffffff;
 }
 
 .navbar-default .navbar-brand{
-  font-family: 'jenna_sueregular';
-	color: #2A5328;
+	color: #6ABA26;
 	font-size: 20px;
+  padding-bottom: 20px;
 }
 
 .booyah-box {
