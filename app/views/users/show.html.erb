@@ -2,4 +2,11 @@
 <br />
 <br />
 <br />
-<h1>User Dashboard Yo</h1>
+<h1><%= @user.email %></h1>
+<h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+<h4>Since then you have: <br/>
+	Added <%= @user.places.count%> natural footprint(s) <br />
+	Made <%= @user.comments.count%> comments <br />
+	And <%= @user.comments.where(rating: '5_stars').count %> of them were 5 stars!
+</h4>
+
