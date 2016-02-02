@@ -84,29 +84,35 @@ a:hover {
   margin-top: -59px;
   color: #ffffff;
   font-weight: bold; 
+
 }
 
 .row p{
   padding-top: 14px;
   padding-bottom: 14px;
   text-align: center;
+  
 }
 .one{
   background-color: #8BBF2A;
-  background-color:rgba(139, 191, 42, .8);
+  background-color:rgba(139, 191, 42, .9);
+  border-bottom: 1px dashed #ffffff;
 }
 
 .two{
   background-color: #33C130;
-  background-color: rgba(51, 193, 48, .8); 
+  background-color: rgba(51, 193, 48, .9); 
+  border-bottom: 1px dashed #ffffff;
 }
 .three{
   background-color: #12CF4D;
-  background-color: rgba(18, 207, 77, .8);
+  background-color: rgba(18, 207, 77, .9);
+  border-bottom: 1px dashed #ffffff;
 }
 .four{
   background-color: #34FA74;
-  background-color: rgba(106, 186, 38, .8);
+  background-color: rgba(106, 186, 38, .9);
+  border-bottom: 1px dashed #ffffff;
 }
 
 .fill{
@@ -143,7 +149,7 @@ a:hover {
 .navbar-default {
 	background-image: none;
 	background-color: rgba(0,0,0, .2);
-  border-bottom: none;  
+  border-bottom: 1px dashed rgba(255,255,255, 0.5); 
   color: #ffffff;
   height: 60px;
   padding-top: 5px;
@@ -218,7 +224,7 @@ a:hover {
   }
   .big-title h1{
   font-family: 'The Girl Next Door', cursive;
-  font-size: 80px;
+  font-size: 60px;
 }
   .big-title h3{
     font-size: 17px;
