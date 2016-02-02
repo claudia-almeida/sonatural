@@ -70,11 +70,11 @@ a:hover {
 }
 
 .big-title h1{
-  font-family: 'Indie Flower', cursive;
+  font-family: 'The Girl Next Door', cursive;
   font-size: 120px;
 }
 .big-title h3{
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /*fade controls*/
@@ -141,7 +141,7 @@ a:hover {
 
 .navbar-default {
 	background-image: none;
-	background-color: rgba(255,255,255, 0);
+	background-color: rgba(0,0,0, .2);
   border-bottom: none;  
   color: #ffffff;
   height: 60px;
@@ -152,7 +152,6 @@ a:hover {
 	color: #ffffff;
   font-weight: bolder;
 	font-size: 25px;
-  margin-left: 20px;
   padding-bottom: 20px;
   
 }
@@ -215,6 +214,13 @@ a:hover {
   body {
     padding-left: 0;
     padding-right: 0;
+  }
+  .big-title h1{
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 80px;
+}
+  .big-title h3{
+    font-size: 17px;
   }
 }
 
