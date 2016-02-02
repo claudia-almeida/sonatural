@@ -1,42 +1,98 @@
- html,body{height:100%;}
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
-.fill{width:100%;
+ @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Indie+Flower|The+Girl+Next+Door);
+
+ html,body{
+  height:100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #6ABA26;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B2D027;
+}
+.carousel,.item,.active{
+  height:100%;
+}
+.carousel-inner {
+  height:100%;
+}
+.fill {
+  width:100%;
   height:100%;
   background-position:center;
   background-size: cover;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", 
-  Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
  } 
-
-/* faster sliding speed */
-.carousel-inner > .item {
-    -webkit-transition: 0.3s ease-in-out left;
-    -moz-transition: 0.3s ease-in-out left;
-    -o-transition: 0.3s ease-in-out left;
-    transition: 0.3s ease-in-out left;
-}
 
 .carousel-control.left, .carousel-control.right {
     background-image: none;
 }
 
-.divider{
-  text-align: center;
+/*fade controls*/
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.big-title{
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  left: 0;
+  bottom: 40%;
   width: 100%;
-  margin: 0 auto;
-  margin-top: -59px;
-  padding: 0;
+  text-align: center;
   color: #ffffff;
-  font-weight: bold;
 }
 
-.divider .row div{
-  padding: 20px;
+.big-title h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 120px;
+}
+.big-title h3{
+  font-size: 30px;
+}
+
+/*fade controls*/
+
+.divider {
+  width: 100%;
+  margin-top: -59px;
+  color: #ffffff;
+  font-weight: bold; 
+}
+
+.row p{
+  padding: 14px;
+  text-align: center;
 }
 .one{
-  background-color: #44BF6B;
-  background-color: rgba(51,193,48,.8);
+  background-color: #8BBF2A;
+  background-color:rgba(139, 191, 42, .8);
 }
 
 .two{
@@ -53,28 +109,74 @@
 }
 
 .fill{
+  width: 100%;
   padding: 0;
+  
+}
+.slide{
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+}
+.slide1{
+  
+  background-image: url('bubbles.jpg');
+  
+}
+.slide2{
+ 
+  background-image: url('camping.jpg');
+ 
+}
+.slide3{
+
+  background-image: url('bubbles.jpg');
+  
+}
+
+.img .img-responsive{
+  width: 100%;
 }
 
 .navbar-default {
 	background-image: none;
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(255,255,255, 0);
   border-bottom: none;  
   color: #ffffff;
+  height: 60px;
+  padding-top: 5px;
 }
 
 .navbar-default .navbar-brand{
-	color: #6ABA26;
-	font-size: 20px;
+	color: #ffffff;
+  font-weight: bolder;
+	font-size: 25px;
+  margin-left: 20px;
   padding-bottom: 20px;
+  
+}
+
+.navbar-default .navbar-brand:hover{
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: #ffffff;
+  color: rgba(255,255,255,.7);
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
   background: #fff;
-  border: 1px solid #ccc;
+  border-bottom: 2px dashed #6ABA26;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 10px;

@@ -1,44 +1,52 @@
 <div class="container-fluid fill">
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel carousel-fade">
   <div class="carousel-inner">
-    <div class="active item">
-      <div class="fill" style="background-image:url('//placehold.it/1024x700/449955/FFF');">
-        <div class="container">
-          
-        </div>
-      </div>
-    </div>
-    <div class="item">
-    <div class="fill">
-    	 <%= image_tag('bubbles.jpg', :alt => "Blowing bubbles") %>
-    </div>
-    <div class="carousel-caption">
-      Looking for hotdogs?
-    </div>
-  </div>
-    <div class="item">
-      <div class="fill" style="background-image:url('//placehold.it/1024x700/CC1111/FFF');">
-        <div class="container">
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pull-center">
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
-  </div>
-</div>
-</div>
-
-<div class="container-fluid divider">
-	<div class="container-fluid row">
-		<div class="one col-xs-12 col-sm-3">Health</div>
-		<div class="two col-xs-12 col-sm-3">Places</div>
-		<div class="three col-xs-12 col-sm-3">Books</div>
-		<div class="four col-xs-12 col-sm-3">Philosophy</div>
+  	<div class="container big-title">
+		<h1>Natural Health</h1>
+		<h3>- - is the best kind of health - -</h3>
 	</div>
+    <div class="active item">
+      <div class="fill">
+  		 <div class="slide slide1">
+
+    	</div>
+      </div>
+    </div>
+  <div class="item">
+    <div class="fill">
+    	 <div class="slide slide2">
+
+    	 </div>
+    <div class="carousel-caption">
+     
+    </div>
+  </div>
+    <div class="item">
+      <div class="fill">
+         <div class="slide slide3">
+
+         </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+</div>
+<div class="divider">
+		<div class="container-fluid row">
+			<div class="one col-xs-12 col-sm-3"><p>Health</p></div>
+			<div class="two col-xs-12 col-sm-3"><p>Health</p></div>
+			<div class="three col-xs-12 col-sm-3"><p>Health</p></div>
+			<div class="four col-xs-12 col-sm-3"><p>Health</p></div>
+		</div>
+	</div>
+<script type="text/javascript">
+var $ = jQuery.noConflict();
+$(document).ready(function() { 
+  $('#myCarousel').carousel({ interval: 3000, cycle: true });
+}); 
+</script>
+
 
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
