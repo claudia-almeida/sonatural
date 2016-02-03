@@ -33,9 +33,31 @@
   </div>
 <% end %>	
 
+<h1 class="text-center">My Footprints</h1>
+<% @user.places.each do |place| %>
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1><%= link_to place.name, place_path(place) %></h1>
+	<h3><%= place.category %></h3>
+	<i><%= place.address %></i><br />
+	<p><%= place.description %></p><br />
+	<% if place.user.present? %>
+		<small><%= place.user.email %></small>
+	<% end %>
 
-
-
+<!--Snippet from shor.html.erb-->
+<% if place.comments.present? %>
+		<div class="col-xs-12">
+			<blockquote>
+				<% if place.comments.last.humanized_rating.present? %>
+				<b><%= place.comments.last.humanized_rating %></b> -
+				<% end %>
+				<%= place.comments.last.message %>
+				<small><%= place.comments.last.user.email %></small>
+			</blockquote>
+		</div>
+<% end %>		
+</div>
+<% end %>
 
 
 
