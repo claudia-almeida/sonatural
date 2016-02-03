@@ -1,39 +1,51 @@
+<div class="container-fluid user-header">
 <br />
 <br />
 <br />
 <br />
-<div class="container-fluid row booyah-box">
-	<div class="col-xs-12 col-sm-4 user-photo">
-		<%= image_tag 'user.png'%>
-	</div>
-	<div class="col-xs-12 col-sm-8 user-info">
-	<h1><%= @user.email %></h1>
-	<h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
-	<h4>Since then you have: <br/>
-		Added <%= @user.places.count%> natural footprint(s) <br />
-		Made <%= @user.comments.count%> comments <br />
-		And <%= @user.comments.where(rating: '5_stars').count %> of them were 5 stars!
-	</h4>
-	</div>
-</div>
-<br />
-<br />
-<h1 class="text-center">My Comments</h1>
-<br />
-<% @user.comments.each do |comment| %>
-	<div class="col-xs-12 col-sm-6">
-		<h2 class="text-left"><%= link_to comment.place.name, place_path(comment.place)%></h2>
-    <blockquote>
-      <% if comment.humanized_rating.present? %>
-        <b><%= comment.humanized_rating %></b> -
-      <% end %>
-      <%= comment.message %>
-      <small><%= comment.user.email %></small>
-    </blockquote>
-  </div>
-<% end %>	
+	<div class="col-xs-8 col-xs-offset-2">
+		<div class="col-xs-12 col-sm-6">
+			<%= image_tag 'claudia.jpg', :class => 'user-photo'%>
+		</div>
 
-<h1 class="text-center">My Footprints</h1>
+		<div class="col-xs-12 col-sm-6 user-info">
+		<h3 class="cute-letter"><%= @user.email %></h3>
+		<h4>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h4>
+		<h5>Since then you have: <br/>
+			Added <%= @user.places.count%> natural footprint(s) <br />
+			Made <%= @user.comments.count%> comments <br />
+			And <%= @user.comments.where(rating: '5_stars').count %> of them were 5 stars!
+		</h5>
+		</div>
+	</div>
+	<br />
+<br />
+<br />
+<br />
+</div>
+<!--HEADER-->
+
+<br />
+<br />
+<div class="container-fluid">
+<div class="col-xs-12 col-sm-6">
+	<h1 class="text-center cute-letter">my comments</h1>
+	<br />
+	<% @user.comments.each do |comment| %>
+		<div class="booyah-box col-xs-10 col-xs-offset-1">
+			<h2 class="text-left"><%= link_to comment.place.name, place_path(comment.place)%></h2>
+	    <blockquote>
+	      <% if comment.humanized_rating.present? %>
+	        <b><%= comment.humanized_rating %></b> -
+	      <% end %>
+	      <%= comment.message %>
+	      <small><%= comment.user.email %></small>
+	    </blockquote>
+	  </div>
+	<% end %>	
+</div>
+<div class="col-xs-12 col-sm-6">
+<h1 class="text-center cute-letter">my footprints</h1>
 <% @user.places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 	<h1><%= link_to place.name, place_path(place) %></h1>
@@ -58,6 +70,6 @@
 <% end %>		
 </div>
 <% end %>
-
-
+</div>
+</div>
 

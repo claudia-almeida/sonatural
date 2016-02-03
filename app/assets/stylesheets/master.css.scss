@@ -160,7 +160,7 @@ a:hover {
   font-weight: bolder;
 	font-size: 25px;
   padding-bottom: 20px;
-  
+  padding-left: 20px;
 }
 
 .navbar-default .navbar-brand:hover{
@@ -212,7 +212,21 @@ a:hover {
 .comment{
   font-size: 5px;
 }
-
+.user-photo {
+  max-width: 150px;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 8px solid rgba(255, 255, 255, .3);
+}
+.cute-letter{
+  font-family: 'Handlee', cursive;
+}
+.user-header{
+  background-color: #8BBF2A;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
 
 /*MEDIA QUERIES*/
 
@@ -228,6 +242,13 @@ a:hover {
 }
   .big-title h3{
     font-size: 17px;
+  }
+  .user-photo{
+    display: block;
+    margin: 0 auto;
+  }
+  .user-info{
+    text-align: center;
   }
 }
 
