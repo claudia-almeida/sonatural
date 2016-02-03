@@ -1,10 +1,15 @@
  @import url(https://fonts.googleapis.com/css?family=Handlee|Open+Sans|Loved+by+the+King);
 
  html,body{
+  background: transparent !important;
   height:100%;
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Handlee', cursive;
 }
 
 a {
@@ -58,24 +63,7 @@ a:hover {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-.big-title{
-  position: absolute;
-  z-index: 200;
-  right: 0;
-  left: 0;
-  bottom: 40%;
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-}
 
-.big-title h1{
-  font-family: 'Handlee', cursive;
-  font-size: 120px;
-}
-.big-title h3{
-  font-size: 20px;
-}
 
 /*fade controls*/
 
@@ -88,7 +76,8 @@ a:hover {
 }
 
 .row p{
-  padding-top: 14px;
+  margin-top: 6px;
+  padding-top: 10px;
   padding-bottom: 14px;
   text-align: center;
   
@@ -226,6 +215,64 @@ a:hover {
   background-color: #8BBF2A;
   color: #ffffff;
   padding-bottom: 40px;
+}
+
+.slider-box{
+  display: inline-block;
+  background-color: #8BBF2A;
+  background-color:rgba(0,0,0,.2);
+  border-radius: 20px;
+  border: 1px dashed #ffffff;
+}
+
+.big-title{
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  left: 0;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.big-title h1{
+  font-family: 'Handlee', cursive;
+  font-size: 120px;
+}
+.big-title h3{
+  font-size: 25px;
+  font-weight: bold;
+
+}
+.big-title p{
+  font-size: 18px;
+}
+
+
+/*INPUT*/
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+  -webkit-appearance: caret;
+  -moz-appearance: caret; /* mobile firefox too! */
+  
+}
+
+.simple_form div.input {
+  background-color: rgba(255,255,255, 0);
+  border-bottom: 1px dashed #000000;
+  margin-bottom: 10px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+.simple_form label {
+  font-size: 18px;
+}
+
+
+#sign-up {
+  background-color: blue;
+  
 }
 
 /*MEDIA QUERIES*/

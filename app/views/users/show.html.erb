@@ -3,6 +3,7 @@
 <br />
 <br />
 <br />
+<br />
 	<div class="col-xs-8 col-xs-offset-2">
 		<div class="col-xs-12 col-sm-6">
 			<%= image_tag 'claudia.jpg', :class => 'user-photo'%>
@@ -19,6 +20,8 @@
 		</div>
 	</div>
 	<br />
+<br />
+<br />
 <br />
 <br />
 <br />
@@ -48,7 +51,7 @@
 <h1 class="text-center cute-letter">my footprints</h1>
 <% @user.places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
-	<h1><%= link_to place.name, place_path(place) %></h1>
+	<h2><%= link_to place.name, place_path(place) %></h2>
 	<h3><%= place.category %></h3>
 	<i><%= place.address %></i><br />
 	<p><%= place.description %></p><br />
