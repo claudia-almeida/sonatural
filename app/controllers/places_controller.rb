@@ -60,6 +60,7 @@ class PlacesController < ApplicationController
 		params.require(:place).permit(:name, :category, :description, :address)
 	end
 
+
 end
 
 =begin
