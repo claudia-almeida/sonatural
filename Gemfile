@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 # Gem CarrierWave allows user uploaded pictures
 
-gem 'carrierwave'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 

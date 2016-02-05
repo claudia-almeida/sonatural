@@ -35,6 +35,12 @@
 <br />
 <br />
 	<div class="pull-right">
+		<button class="btn btn-primary clear" data-toggle="modal" data-target="#myModal">
+ 			Add a comment
+		</button>
+		<button class="btn btn-primary clear" data-toggle="modal" data-target="#myPictureModal">
+ 			Add a photo
+		</button>
 		<% if current_user && current_user == @place.user %>
 			<%= link_to 'Edit', edit_place_path, class: 'btn btn-primary' %>
 			<%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger'%>
@@ -43,20 +49,10 @@
 	</div>
 	<br />
 	<br />
-	<div class="clear">
-		
-	</div>
+<div class="clear"></div>
 
 
-
-<!--MODAL!-->
-
-<!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg clear" data-toggle="modal" data-target="#myModal">
- Add a comment
-</button>
-
-<!-- Modal -->
+<!-- Regular Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -79,7 +75,7 @@
   </div>
 </div>
 
-<!--END MODAL!-->
+<!--END regular MODAL!-->
 </div>
 
 <div class="booyah-box col-xs-10 col-xs-offset-1">
