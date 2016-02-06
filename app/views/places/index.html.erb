@@ -60,6 +60,7 @@ $(document).ready(function() {
 
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
+	<div class="col-sm-8">
 	<h1><%= link_to place.name, place_path(place) %></h1>
 	<h3><%= place.category %></h3>
 	<i><%= place.address %></i><br />
@@ -71,16 +72,26 @@ $(document).ready(function() {
 <!--Snippet from shor.html.erb-->
 <% if place.comments.present? %>
 		<div class="col-xs-12">
-			<blockquote>
+			<div>
 				<% if place.comments.last.humanized_rating.present? %>
 				<b><%= place.comments.last.humanized_rating %></b> -
 				<% end %>
 				<%= place.comments.last.message %>
 				<small><%= place.comments.last.user.email %></small>
-			</blockquote>
+			</div>
 		</div>
-<% end %>		
-<!--END Snippet from shor.html.erb-->
+<% end %>	
+</div>	
+<!--END Snippet from show.html.erb-->
+
+<% if place.photos.present? %>
+		<div class="col-xs-12 col-sm-4">
+			<br />
+			<%= image_tag place.photos.last.picture , :class => 'place-photo img-responsive' %>	
+			<br />
+		</div>
+<% end %>	
+</div>
 
 </div>
 <% end %>
