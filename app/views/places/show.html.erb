@@ -52,7 +52,6 @@
 	<br />
 	<br />
 <div class="clear"></div>
-<div><%= @photos.inspect %></div>
 
 <!-- Regular Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -89,7 +88,7 @@
         <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
       </div>
       <div class="modal-body">
-        <%= simple_form_for @photo, url: photo_path(@place)  do |f| %>
+        <%= simple_form_for @photo, html: { multipart: true }, url: place_photos_path(@place)  do |f| %>
 			<%= f.input :caption %>
 			<%= f.input :picture  %>
 			<br />
@@ -109,9 +108,12 @@
 	<h1>Photos</h1>
 	<br />
 	<% @place.photos.each do |photo| %>
-		<div class="col-xs-12 col-sm-6">
-				<b><%= photo.picture %></b>
-				<b><%= photo.caption %></b>
+		<div class="col-xs-12 col-sm-4 col-md-3">
+				<%= image_tag photo.picture , :class => 'place-photo' %>
+				<br />
+				<%= photo.caption %>
+				<br />
+				<br />
 		</div>
 	<% end %>
 </div>

@@ -11,4 +11,5 @@ class Place < ActiveRecord::Base
 	validates :category, presence: true, :length => {:within => 3..100}
 	validates :address, presence: true, :length => {:within => 20..100}
 	validates :description, presence: true, :length => {:within => 100..1500}
+
 end

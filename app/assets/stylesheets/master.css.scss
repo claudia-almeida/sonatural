@@ -301,6 +301,17 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
   border: none;
 }
 
+.place-photo{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 2%;
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px dashed rgba(0,0,0,.1);
+}
+
 /*MEDIA QUERIES*/
 
 /* keep full widget on smaller screens */
@@ -340,6 +351,10 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
   .navbar-default .navbar-toggle .icon-bar:hover{
     background-color: #8BBF2A;
   }
+  .place-photo{
+  width: 100%;
+  height: 200px;
+}
 }
 
 
