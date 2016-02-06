@@ -89,14 +89,17 @@
       </div>
       <div class="modal-body">
         <%= simple_form_for @photo, html: { multipart: true }, url: place_photos_path(@place)  do |f| %>
+			
 			<%= f.input :caption %>
 			<%= f.input :picture  %>
 			<br />
 			<div class="modal-footer">
         		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         		<%= f.submit "Done!", class: 'btn btn-primary' %>
+
+
      	 	</div>
-		<% end %>
+	<% end %>	
       </div>
     </div>
   </div>

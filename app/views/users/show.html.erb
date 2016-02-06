@@ -37,13 +37,11 @@
 	<% @user.comments.each do |comment| %>
 		<div class="booyah-box col-xs-10 col-xs-offset-1">
 			<h2 class="text-left"><%= link_to comment.place.name, place_path(comment.place)%></h2>
-	    <blockquote>
 	      <% if comment.humanized_rating.present? %>
 	        <b><%= comment.humanized_rating %></b> -
 	      <% end %>
 	      <%= comment.message %>
 	      <small><%= comment.user.email %></small>
-	    </blockquote>
 	  </div>
 	<% end %>	
 </div>
