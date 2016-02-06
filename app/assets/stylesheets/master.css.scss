@@ -139,9 +139,10 @@ a:hover {
 }
 
 .navbar-default {
+  background-color: #8BBF2A;
+  border: none;
 	background-image: none;
-	background-color: rgba(0,0,0, .2);
-  border-bottom: 2px solid rgba(255,255,255, 0.2); 
+	background-color: rgba(140, 189, 56, .8);
   color: #ffffff;
   height: 60px;
   padding-top: 5px;
@@ -238,7 +239,7 @@ a:hover {
   z-index: 200;
   right: 0;
   left: 0;
-  bottom: 40%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: #ffffff;
@@ -308,9 +309,12 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
     padding-left: 0;
     padding-right: 0;
   }
+.big-title{
+  top: 20%;
+}
   .big-title h1{
- font-family: 'Handlee', cursive;
-  font-size: 60px;
+  font-family: 'Handlee', cursive;
+  font-size: 50px;
 }
   .big-title h3{
     font-size: 17px;
@@ -324,9 +328,10 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
   }
 
   .navbar-collapse{
-   margin-top: 4px; 
-   background-color: rgba(0,0,0,.2);
-   border-bottom: 1px solid #ffffff;  
+   background-color: #8BBF2A;
+   top: 0;
+   padding-top: 20px; 
+   border-bottom: 1px dashed rgba(0 ,0, 0, .2);  
    box-shadow: none;
   }
   .navbar-default .navbar-toggle .icon-bar{
@@ -335,7 +340,6 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
   .navbar-default .navbar-toggle .icon-bar:hover{
     background-color: #8BBF2A;
   }
-
 }
 
 

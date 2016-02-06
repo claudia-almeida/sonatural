@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
-# Gem CarrierWave allows user uploaded pictures
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
+
+# CarrierWave fir the picture uploading feature
+
+gem 'carrierwave'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
