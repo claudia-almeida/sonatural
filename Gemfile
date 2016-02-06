@@ -7,13 +7,17 @@ gem 'rails', '4.0.1'
 
 gem 'carrierwave'
 
+# Fog allows carrierwave to communicate with amazon web services
+
+gem "fog", "~> 1.3.1"
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate'
 
-# ENV geocoder related
+# ENV geocoder related / Figaro gem to secure important information
 gem 'figaro', ">= 1.0.0"
 
 # Cool mapping features
