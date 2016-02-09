@@ -261,7 +261,7 @@ a:hover {
 
 /*INPUT*/
 
-input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+input[type="text"], input[type="textarea"], input[type="email"], input[type="search"], input[type="password"] {
   -webkit-appearance: caret;
   -moz-appearance: caret; /* mobile firefox too! */
   
@@ -358,6 +358,10 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
   .btn-primary, .btn-danger{
   width: 100%;
   margin-bottom: 5px;
+}
+  .simple_form div.input {
+  width: 100%;
+
 }
 
 }
